@@ -1,6 +1,6 @@
 lexer grammar LA;
 
-%Palavras Chave
+//Palavras Chave
 Algoritmo: 'algoritmo';
 Fim_algoritmo: 'fim_algoritmo';
 Declare: 'declare';
@@ -13,4 +13,4 @@ Real: 'real';
 Logico: 'logico';
 
 IDENT: [a-zA-Z][a-zA-Z0-0]*;
-CADEIA: ' " .* ";
+CADEIA: ' " .* "';
