@@ -33,7 +33,7 @@ public class LinguagemLa
                     pw.println("Cadeia não fechada na linha "+t.getLine());
                     break;
                 } else {
-                    pw.println("<" + nomeToken + "," + t.getText() + ">");
+                    pw.println("<'" + t.getText() + "'," + nomeToken + ">");
                 }
             }
 
