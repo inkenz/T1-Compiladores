@@ -27,10 +27,13 @@ public class LinguagemLa
                 String nomeToken = LA.VOCABULARY.getDisplayName(t.getType());
 
                 if(nomeToken.equals("ERRO")) {
-                    pw.println("Erro na linha "+t.getLine()+": "+t.getText());
+                    pw.println("Linha "+t.getLine()+": "+t.getText()+" - simbolo nao identificado");
                     break;
                 } else if(nomeToken.equals("CADEIA_NAO_FECHADA")) {
-                    pw.println("Cadeia não fechada na linha "+t.getLine());
+                    pw.println("Linha "+t.getLine()+": cadeia literal nao fechada");
+                    break;
+                } else if(nomeToken.equals("COMENTARIO_NAO_FECHADO")) {
+                    pw.println("Linha "+t.getLine()+": comentario nao fechado");
                     break;
                 } else {
                     pw.println("<'" + t.getText() + "'," + nomeToken + ">");

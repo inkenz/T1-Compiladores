@@ -64,16 +64,22 @@ ABREBAR: '[';
 FECHABAR: ']';
 SEQ: '..';
 SETA: '<-';
+PONTEIRO: '^';
+ENDERECO: '&';
 
 //Definições
-IDENT: [a-zA-Z][a-zA-Z0-9]*;
-DEF_INT: ('0'..'9')+;
-DEF_REAL: ('0'..'9')+ '.' ('0'..'9')+;
+IDENT: [a-zA-Z]([a-zA-Z0-9]* | [a-zA-Z0-9]*'_'[a-zA-Z0-9]* );
+NUM_INT: ('0'..'9')+;
+NUM_REAL: ('0'..'9')+ '.' ('0'..'9')+;
 
 CADEIA:
     '"' ~('"'|'\n'|'\r'|'\t')* '"';
+CADEIA_NAO_FECHADA:
+    '"' ~('"'|'\n'|'\r'|'\t')*;
 COMENTARIO:
     '{' ~('{'|'}'|'\n'|'\r'|'\t')* '}' {skip();};
+COMENTARIO_NAO_FECHADO:
+    '{' ~('{'|'}'|'\n'|'\r'|'\t')*;
 
 ERRO:
-    ('$' | '~' | CADEIA'}');
+    ('$' | '~' | CADEIA'}' | '}');
