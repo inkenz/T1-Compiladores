@@ -5,7 +5,7 @@ Trabalho 1 da Disciplina de Construção de Compiladores 2023/01 UFSCar
 ## Grupo:
 
   + Guilherme Calça - 790759
-  
+  + Kenzo Inanami de Faria - 790778
   <!-- Kenzo
        
        Julio-->
