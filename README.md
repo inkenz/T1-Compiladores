@@ -27,6 +27,6 @@ mvn package
 
 Para execução digite o comando:
 ```
-java -jar [local do arquivo linguagem-la-1.0-SNAPSHOT-jar-with-dependencies.jar] [arquivo de entrada] [arquivo de saída]
+java -jar  target\linguagem-la-1.0-SNAPSHOT-jar-with-dependencies.jar [arquivo de entrada] [arquivo de saída]
 ```
 
