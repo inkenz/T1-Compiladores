@@ -9,17 +9,24 @@ Trabalho 1 da Disciplina de Construção de Compiladores 2023/01 UFSCar
   + Julio Cesar dos Santos Oliveira Filho - 779800
   
   
-## Execução do Projeto
+## Compilação do Projeto
 
-Para execução é necessário a versão mínima Java 20.0.1 e a ferramenta Maven
+O projeto foi compilado usando a versão Java 20.0.1 e a ferramenta Maven. Para compilar em sua máquina, em alguns casos, será necessário mudar o arquivo pom.xml para aceitar outras versões. Para fazer isso, abra o arquivo pom.xml e nas linhas 58 e 59 alterar o número da versão.
+'''
+<maven.compiler.source>20</maven.compiler.source>
+<maven.compiler.target>20</maven.compiler.target>
+'''
 
-Na pasta do projeto basta realizar a compilação e execução do projeto com os comandos:
+Na pasta do projeto basta realizar a compilação do projeto com o comandos:
 
 ```
 mvn package
 ```
-  
-```
-java -jar target/linguagem-la-1.0-SNAPSHOT-jar-with-dependencies.jar [arquivo de entrada] [arquivo de saída]
-```
+
+## Execução
+
+Para execução digite o comando:
+'''
+java -jar [local do arquivo linguagem-la-1.0-SNAPSHOT-jar-with-dependencies.jar] [arquivo de entrada] [arquivo de saída]
+'''
 
