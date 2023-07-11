@@ -83,3 +83,5 @@ COMENTARIO_NAO_FECHADO:
 
 ERRO:
     ('$' | '~' | CADEIA'}' | '}');
+WS:
+    (' ' | '\t' | '\r' | '\n') {skip();};

@@ -65,6 +65,7 @@ CADEIA_NAO_FECHADA=64
 COMENTARIO=65
 COMENTARIO_NAO_FECHADO=66
 ERRO=67
+WS=68
 'algoritmo'=1
 'fim_algoritmo'=2
 'declare'=3
